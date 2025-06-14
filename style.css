@@ -1,0 +1,305 @@
+@font-face {
+  font-family: poppins;
+  src: url(Font/Poppins-Light.ttf);
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: poppins, Arial;
+}
+body{
+  background-color: rgb(232, 250, 255);
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: 0;
+}
+.container{
+  background-color: rgb(249, 254, 255);
+  position: relative;
+  width: 100%;
+  max-width: 2000px;
+  max-height: 2000px;
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 10px 10px rgb(0,0,0,0.1);
+}
+.leftSide{
+  background-color: rgb(2, 51, 81);
+  position: relative;
+  padding: 40px;
+}
+.profileText{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(95, 148, 197);
+  padding-bottom: 20px;
+}
+.profileText .profilePicture{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid rgb(95, 148, 197);
+}
+.profileText .profilePicture img{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profileText h2{
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: rgb(245, 178, 178);
+  text-transform: uppercase;
+  text-align: center;
+}
+.profileText h2 span{
+  font-weight: 400;
+  font-size: 0.8em;
+  color: aqua;
+}
+
+
+.contactInfo{
+  padding-top: 30px;
+}
+.contactInfo h3,
+.language h3{
+/* text-align: center; */
+text-transform: uppercase;
+letter-spacing: 3px;
+color: white;
+font-weight: 600;
+margin-bottom: 5px;
+}
+.contactInfo ul{
+  position: relative;
+}
+.contactInfo ul li{
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.contactInfo ul li .icons{
+  display: inline-block;
+  color: rgb(9, 193, 193);
+  font-size: 15px;
+  width: 30px;
+  /* border: 1px solid white; */
+}
+.contactInfo ul li .iconsText{
+  color: rgb(245, 178, 178);
+  font-weight: 300;
+  font-size: 12px;
+}
+.education, 
+.language{
+  padding-top: 20px;
+  margin-bottom: 5px;
+  /* border: 1px solid red; */
+}
+.education .title{
+  padding-bottom: 5px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.education ul{
+  margin-bottom: 15px;
+}
+.education h5{
+  color:  rgb(9, 193, 193);
+  font-size: 14px;
+}
+.education h4{
+  color:  white;
+  font-size: 12px;
+}
+.education h4:nth-child(2){
+  font-size: 16px;
+  color: rgb(245, 178, 178);
+}
+
+
+
+.language .percentage{
+  position: relative;
+  width: 100%;
+  display: block;
+  height: 4px;
+  background-color: black;
+  border-radius: 2px;
+  margin-top: 2px;
+  margin-bottom: 5px;
+}
+.language .percentage div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(9, 193, 193);
+  border-radius: 2px;
+  height: 100%;
+}
+.language .text{
+  color:rgb(245, 178, 178); 
+}
+
+
+
+
+
+
+
+.container .rightSide{
+  /* border: 1px solid red; */
+  background-color:rgb(234, 248, 255);
+  padding: 40px;
+  font-weight: 600;
+  line-height: 1.5em;
+}
+.rightSide .title2{
+  color: rgb(2, 51, 81);
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.aboutMe{
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+.aboutMe p{
+  font-weight: 300;
+  /* text-indent: 20px; */
+  text-align: justify;
+  color: gray;
+}
+.aboutExperience .container2{
+  display: flex;
+  /* border: 1px solid red; */
+  padding-bottom: 10px;
+  flex-direction: row;
+}
+.aboutExperience .container2 .yearCompany{
+  min-width: 150px;
+}
+.aboutExperience .container2 .yearCompany h5{
+  color: gray;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.aboutExperience .container2 .text{
+  text-align: justify;
+  color: rgb(0, 83, 135);
+}
+.aboutExperience .container2 .text p{
+  text-align: justify;
+  color: rgb(0, 48, 81);
+  font-weight: 300;
+}
+
+
+.aboutSkills{
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+.aboutSkills .container2{
+  /* border: 1px solid red; */
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.aboutSkills .container2 h4{
+  text-transform: uppercase;
+  font-weight: 600;
+  color: gray;
+}
+
+.aboutSkills .container2 .percent{
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background-color: rgb(207, 222, 222);
+  border-radius: 3px;
+}
+.aboutSkills .container2 .percent div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgb(64, 156, 190);
+  border-radius: 3px;
+}
+
+
+
+.aboutInterest ul li{
+  list-style: none;
+  padding: 10px 0;
+  /* border: 1px solid red; */
+  color: rgb(0, 48, 81);
+  
+}
+.aboutInterest ul li i{
+  margin-right: 10px;
+  color: rgb(64, 156, 190);
+}
+.aboutInterest ul{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  /* border: 1px solid red; */
+}
+
+
+
+/*for responsive web page, write the code below*/
+@media (max-width:1000px){
+  .container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+
+  }
+}
+
+@media (max-width:700px){
+  .aboutInterest ul{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (max-width: 600px){
+  .aboutInterest ul{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .container2{
+    margin-bottom: 5px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
